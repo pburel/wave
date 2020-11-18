@@ -18,10 +18,7 @@ abstract class Config {
 
   Config({this.colorMode});
 
-  void throwNullError(String colorModeStr, String configStr) {
-    throw FlutterError(
-        'When using `ColorMode.$colorModeStr`, `$configStr` must be set.');
-  }
+  void throwNullError(String colorModeStr, String configStr) ;
 }
 
 class CustomConfig extends Config {
@@ -33,6 +30,11 @@ class CustomConfig extends Config {
   final List<double> heightPercentages;
   final MaskFilter blur;
 
+  void throwNullError(String colorModeStr, String configStr) {
+    throw FlutterError(
+        'When using `ColorMode.$colorModeStr`, `$configStr` must be set.');
+  }
+  
   CustomConfig({
     this.colors,
     this.gradients,
