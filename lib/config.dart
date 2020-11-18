@@ -18,7 +18,7 @@ abstract class Config {
 
   Config({this.colorMode});
 
-  void throwNullError(String colorModeStr, String configStr) ;
+  //void throwNullError(String colorModeStr, String configStr) ;
 }
 
 class CustomConfig extends Config {
