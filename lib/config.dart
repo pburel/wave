@@ -30,7 +30,7 @@ class CustomConfig extends Config {
   final List<double> heightPercentages;
   final MaskFilter blur;
 
-  throwNullError(String colorModeStr, String configStr) {
+  final void throwNullError(String colorModeStr, String configStr) {
     throw FlutterError(
         'When using `ColorMode.$colorModeStr`, `$configStr` must be set.');
   }
