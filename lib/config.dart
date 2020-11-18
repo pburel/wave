@@ -92,4 +92,4 @@ class RandomConfig extends Config {
 /// todo
 class SingleConfig extends Config {
   SingleConfig() : super(colorMode: ColorMode.single);
-}
+} 
